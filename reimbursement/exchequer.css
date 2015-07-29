@@ -1,0 +1,61 @@
+body {	
+	font-family: sans-serif;
+	min-width:1000px; 
+}
+
+#Header {
+	color:blue;
+	font-family: sans-serif;
+
+}
+
+.dinner_p {
+	margin: .25;
+}
+#dinner {
+	display: none;
+	float:left;
+	width:65%;
+}
+
+#dinner_sample{
+	display: none;
+	float:right;
+	width:35%;
+}
+
+#reimbursement {
+	display: none;
+}
+
+#file_description {
+	font-size: 10px;
+}
+.description {
+	font-family: sans-serif;
+}
+
+#aepi_image {
+	display: block;
+}
+
+
+.errors {
+	color: red;
+}
+
+.receipt_errors{
+	color: red;
+	font-size: 12px;
+}
+.default {
+    border-color: black;
+    border-width: 1px;
+
+}
+
+.missing_field{
+	border-color: red;
+	border-width: 3px;
+}
+
