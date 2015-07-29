@@ -1,9 +1,7 @@
 <?php 
 
-//$to = "aepi-exchequer@mit.edu"; // this is your Email address
-define("to","aepi-exchequer@mit.edu")
-
 if(isset($_POST['submit_reimbursement'])){
+    $to = "aepi-exchequer@mit.edu"; // this is your Email address
     $from = $_SERVER['SSL_CLIENT_S_DN_Email']; // this is the sender's Email address
     $first_name = $_SERVER['SSL_CLIENT_S_DN_CN'];    
     $message = "Payment to " . $first_name . "\n\n";    
@@ -11,14 +9,14 @@ if(isset($_POST['submit_reimbursement'])){
     $headers .= "CC: " . $from . "\r\n";
     $send_date = date_create();
     $subject = "6_1_3 AEPi Reimbursement: " . $first_name . "_" . date_format($send_date, 'Y-m-d H:i:s');
-    define("UPLOAD_DIR", getcwd() . "/receipts/");
+    define("UPLOAD_DIR", "receipts/");
     $csv_data = array();
     for ($i=1; $i<=5; $i++){
         upload_receipt($i);
 
     }
     $message = wordwrap($message, 70);
-    mail(to,$subject,$message,$headers);
+    mail($to,$subject,$message,$headers);
     echo "Thank you for submitting a reimbursement.  You will receive a confirmation email at your MIT email.";
 
     ////Make a record online
@@ -33,6 +31,8 @@ if(isset($_POST['submit_reimbursement'])){
      $file = fopen("reimbursements.html","a+");
      fwrite($file, $message);
      fclose($file);
+
+
 }    
 
 
@@ -99,6 +99,7 @@ function upload_receipt($num){
 }
 
 if(isset($_POST['submit_dinner'])){
+    $to = "aepi-exchequer@mit.edu"; // this is your Email address
     $from = $_SERVER['SSL_CLIENT_S_DN_Email']; // this is the sender's Email address
     $first_name = $_SERVER['SSL_CLIENT_S_DN_CN'];    
     $message = "Sent from" . $first_name . "\n\n";    
@@ -111,7 +112,7 @@ if(isset($_POST['submit_dinner'])){
         $message.= "Pay all of the reimbursement to:" . $first_name ;
     }
     $subject = "1_8 AEPi Thursday Dinner: " . $first_name . "_" . date_format($send_date, 'Y-m-d H:i:s');
-    mail(to,$subject,$message,$headers);
+    mail($to,$subject,$message,$headers);
     echo "Thank you for submitting the Thursday night dinner reimbursement. You will receive a confirmation email shortly";
 }
 
