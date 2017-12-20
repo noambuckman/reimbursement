@@ -318,36 +318,36 @@ Updates for new exchequer/year:
 			<input  id="name5" name="person5" type="text" list="brothers" size="20" /> <input  id="name12" name="person12" type="text" list="brothers" size="20" /><br />
 			<input  id="name6" name="person6" type="text" list="brothers" size="20" /> <input  id="name13" name="person13" type="text" list="brothers" size="20" /><br />
 			<datalist id="brothers">
-			  <option value="Aaron Rose">
-			  <option value="Adam Eagle">  
-			  <option value="Alex Grinman">
-			  <option value="Ariel Schvartzman">
-			  <option value="Azaria Zornberg">  
-			  <option value="Ben Niewood">
-  			  <option value="Bertie Ancona">
-			  <option value="Blake Elias">
-			  <option value="Daniel Shaar">
-			  <option value="David Wyrobnik">  
-			  <option value="Drew Bent">
-			  <option value="Elisha Yadgaran">
-			  <option value="Evan Crane">
-			  <option value="George Friedlander">
-			  <option value="Isaac Silberberg">
-			  <option value="Jason Fischman">  
-			  <option value="Jeffrey Sperling">
-			  <option value="Jesse Kirkpatrick">
-			  <option value="Jonathan Elzur">
-			  <option value="Jonathan Jove">  
-			  <option value="Jonathan Hurowitz">
-			  <option value="Jordan Cotler">
-			  <option value="Lane Gunderman">
-			  <option value="Marcus Boorstin">
-			  <option value="Matt DeCross">  
-			  <option value="Maxwell Haubenstock">
-			  <option value="Micha Ben-Naim">
-			  <option value="Noam Buckman">
-			  <option value="Steven Fine">  
-			  <option value="Ziv Scully">
+			  <option value="Aaron">
+			  <option value="Adam">  
+			  <option value="Alex">
+			  <option value="Ariel">
+			  <option value="Azaria">  
+			  <option value="Ben">
+  			  <option value="Bertie">
+			  <option value="Blake">
+			  <option value="Daniel">
+			  <option value="David">  
+			  <option value="Drew">
+			  <option value="Elisha">
+			  <option value="Evan">
+			  <option value="George">
+			  <option value="Isaac">
+			  <option value="Jason">  
+			  <option value="Jeffrey">
+			  <option value="Jesse">
+			  <option value="Jonathan">
+			  <option value="Jonathan">  
+			  <option value="Jonathan">
+			  <option value="Jordan">
+			  <option value="Lane">
+			  <option value="Marcus">
+			  <option value="Matt">  
+			  <option value="Maxwell">
+			  <option value="Micha">
+			  <option value="Noam">
+			  <option value="Steven">  
+			  <option value="Ziv">
 			</datalist>
 
 		<p class="dinner_p" style="margin-bottom:0"><b>Step 3:</b> Upload Picture of Dinner: <input type="file" name="pic" id="pic" /> </p>
